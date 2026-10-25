@@ -1,0 +1,26 @@
+# Frontend dependencies and generated output
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+frontend/*.tsbuildinfo
+
+# Python dependencies, temporary assets and test output
+backend/.venv/
+backend/.storage/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.ruff_cache/
+**/.coverage
+backend/htmlcov/
+
+# Local configuration; keep examples available
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Local tooling
+.DS_Store
+Thumbs.db
+*.log
