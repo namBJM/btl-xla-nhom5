@@ -1,3 +1,7 @@
+# Điểm khởi động FastAPI, chạy bằng backend/run.cmd.
+# Editor.tsx gọi /api/health và /api/algorithms khi kết nối backend.
+# CORS phải cho phép origin frontend; lỗi cũng dùng envelope mà api-client.ts đọc được.
+
 """FastAPI application factory and error/CORS wiring."""
 
 from contextlib import asynccontextmanager

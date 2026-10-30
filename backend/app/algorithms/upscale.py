@@ -1,3 +1,9 @@
+# FE: "Nâng độ phân giải", tool_id=upscale, algorithm=upscale_image; người 4.
+# scale là integer 2 hoặc 4, mặc định 2; ToolsPanel hiển thị 2x/4x.
+# Đây phải là bước cuối request; output dự kiến width/height nhân scale.
+# Metadata ProcessResult phải phản ánh kích thước thật để FE hiện/so sánh đúng.
+# Chưa có mô hình hay nội suy trong stub, không được báo thành công bằng ảnh gốc.
+
 """Image-upscaling interface (intentionally unimplemented)."""
 
 from __future__ import annotations

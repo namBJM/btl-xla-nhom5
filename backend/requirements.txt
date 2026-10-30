@@ -1,3 +1,6 @@
+# Thư viện chạy FastAPI/upload; frontend cài riêng qua npm trong frontend/.
+# Scaffold chưa yêu cầu OpenCV/Torch hay mô hình; không tự suy ra hỗ trợ thuật toán.
+
 fastapi>=0.115,<1
 pydantic>=2.8,<3
 pydantic-settings>=2.4,<3

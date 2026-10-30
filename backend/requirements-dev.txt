@@ -1,3 +1,5 @@
+# Công cụ test hợp đồng HTTP mà frontend sử dụng; bao gồm requirements chạy app.
+
 -r requirements.txt
 httpx>=0.27,<1
 pytest>=8.3,<9

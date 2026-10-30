@@ -1,3 +1,7 @@
+# Xác nhận thuật toán/pipeline/AI chưa triển khai bằng NotImplementedError.
+# Khi làm thật cần bổ sung kiểm thử chất lượng và sửa kỳ vọng stub có chủ đích;
+# không xóa kiểm thử chỉ để che lỗi hoặc trả input nguyên trạng như kết quả.
+
 """All algorithm, pipeline, and advisor functions stay explicit stubs."""
 
 from uuid import uuid4

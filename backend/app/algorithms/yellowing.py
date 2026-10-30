@@ -1,3 +1,8 @@
+# FE: "Giảm ố vàng", tool_id=yellowing, algorithm=remove_yellow_cast; người 3.
+# strength: 0..1, bước UI 0.05, mặc định 0.5; 0 giữ input, 1 dùng toàn bộ
+# kết quả sửa màu, giá trị giữa là mức trộn của wrapper khi triển khai.
+# Input/output dự kiến BGR uint8 cùng kích thước; không sửa input, hiện là stub.
+
 """Yellow-cast correction interface (intentionally unimplemented)."""
 
 from __future__ import annotations

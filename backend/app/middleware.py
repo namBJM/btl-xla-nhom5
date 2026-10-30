@@ -1,3 +1,7 @@
+# Bảo vệ POST /api/upload trước khi parser multipart ghi tệp tạm.
+# Frontend gửi FormData với field file; body gồm cả bytes ảnh và framing multipart.
+# Giới hạn file chính xác còn được kiểm tra trong routes.py; lỗi 413 dùng envelope chung.
+
 """ASGI safeguards that bound multipart request spooling before route handling."""
 
 from collections.abc import Awaitable, Callable

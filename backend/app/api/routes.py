@@ -1,3 +1,13 @@
+# Đối chiếu HTTP: frontend/src/services/api-client.ts và src/types/api.ts.
+# health()/catalog(): Editor kiểm tra kết nối và lấy metadata cho ToolsPanel.
+# upload(): FormData chỉ có file -> ImageAsset; image_id dùng cho process/advise.
+# get_original(): trả bytes gốc qua URL tương đối; FE nối URL bằng apiClient.imageUrl().
+# process(): nút "Xử lý ảnh" gửi {image_id, steps}; hợp lệ vẫn trả 501.
+# advise(): tab "AI tư vấn" gửi {image_id, prompt, steps, current_result_id: null}.
+# download(): nút tải dùng result_id thật; hiện chưa có kết quả nên API trả 501.
+# Khi tích hợp thật cần trả ProcessResult đúng contract trước khi FE có thể hiện
+# kết quả/so sánh/tải xuống; tuyệt đối không trả ảnh gốc như ảnh đã khôi phục.
+
 """Resim HTTP endpoints."""
 
 from typing import Any

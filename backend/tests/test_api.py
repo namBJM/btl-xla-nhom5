@@ -1,3 +1,6 @@
+# Kiểm thử HTTP tương ứng api-client.ts: health/catalog/upload/original và các lỗi.
+# Giữ payload/kiểu số/envelope nhất quán với FE; 501 là kỳ vọng của scaffold.
+
 """Contract and storage behavior tests."""
 
 from datetime import datetime, timedelta, timezone

@@ -1,3 +1,9 @@
+# Phục vụ vùng upload/canvas: kiểm tra JPEG/PNG thật, lưu nguyên bytes và metadata.
+# UploadResponse cung cấp image_id, filename, content_type, size_bytes, width, height, url.
+# Canvas có thể xem preview local trước khi upload xong; preview không phải ID server.
+# UUID và TTL quyết định ảnh còn tồn tại cho process/advise; hết hạn trả 404.
+# Đây chỉ là kho ảnh gốc, chưa có kho ảnh kết quả cho compare/download.
+
 """Bounded JPEG/PNG validation and original-byte storage."""
 
 from dataclasses import dataclass

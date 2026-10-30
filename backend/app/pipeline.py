@@ -1,3 +1,10 @@
+# Điểm ghép 8 nhóm công cụ; hiện raise NotImplementedError, route chưa gọi hàm này.
+# FE serializeSteps() gửi thứ tự: scratches -> denoise -> yellowing -> brightness
+# -> contrast -> colorize -> sharpen -> upscale; chỉ gồm công cụ được bật.
+# Khi triển khai: bắt đầu từ ảnh gốc BGR uint8, chạy theo request, không sửa ảnh gốc.
+# Hàm trả mảng ảnh nội bộ; route/storage còn phải mã hóa, lưu và tạo ProcessResult.
+# Chỉ hoàn thiện hàm này chưa đủ để mở so sánh hoặc tải kết quả trên FE.
+
 """Processing pipeline interface (intentionally unimplemented)."""
 
 from __future__ import annotations

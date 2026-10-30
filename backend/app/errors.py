@@ -1,3 +1,8 @@
+# api-client.ts đọc lỗi theo {error: {code, message, details}} và hiện message tiếng Việt.
+# 501 NOT_IMPLEMENTED là tính năng chưa triển khai, không phải upload thành công.
+# Giữ phân biệt 404 ảnh mất, 413 quá dung lượng, 415 sai định dạng và 422 sai dữ liệu.
+# Không đưa traceback, đường dẫn nội bộ hoặc dữ liệu ảnh vào response.
+
 """Safe, consistent API error responses."""
 
 from collections.abc import Mapping

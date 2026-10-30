@@ -1,3 +1,10 @@
+# FE: "Giảm vết xước", tool_id=scratches, algorithm=reduce_scratches; người 2.
+# sensitivity: 0..1, bước UI 0.05, mặc định 0.5; càng cao càng nhạy.
+# inpaint_radius: integer 1..10, mặc định 3; FE không gửi mask.
+# detect_scratches tạo mask nội bộ về sau; cần chốt cách ánh xạ sensitivity
+# sang phát hiện vết xước bằng thử nghiệm, chưa có thuật toán được chọn sẵn.
+# Serializer FE đặt nhóm này đầu tiên; cả detect/reduce hiện vẫn là stub.
+
 """Scratch detection and reduction interfaces (intentionally unimplemented)."""
 
 from __future__ import annotations

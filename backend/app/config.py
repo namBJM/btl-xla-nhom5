@@ -1,3 +1,8 @@
+# Đọc backend/.env với tiền tố RESIM_; xem .env.example cho cấu hình mặc định.
+# NEXT_PUBLIC_API_BASE_URL thuộc frontend, phải trỏ tới địa chỉ FastAPI đang chạy.
+# cors_origins là origin của trang frontend, không phải URL backend.
+# Giới hạn byte/pixel ở đây là kiểm tra cuối cùng dù frontend đã kiểm tra file.
+
 """Runtime settings for the Resim API."""
 
 from pathlib import Path

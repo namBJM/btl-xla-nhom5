@@ -1,3 +1,7 @@
+# Xuất tên hàm thuật toán để nhóm tích hợp pipeline về sau; mọi hàm hiện vẫn là stub.
+# FE chọn ID trong catalog, không import hàm Python; cần nối ID với hàm khi làm pipeline.
+# detect_scratches là helper nội bộ, không phải nhóm thứ 9 hay API nhận mask từ FE.
+
 """Documented algorithm interfaces; no image-processing code is implemented."""
 
 from app.algorithms.brightness import adjust_gamma

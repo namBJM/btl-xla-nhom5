@@ -1,3 +1,10 @@
+# Cầu nối với ToolsPanel.tsx: GET /api/algorithms trả nhãn, kiểu control,
+# options, min/max/step/default; frontend dùng chúng để dựng và reset cấu hình.
+# id là ProcessingStep.algorithm; tool_id khớp ToolId trong frontend/src/types/api.ts.
+# Có 9 thuật toán nhưng 8 nhóm: Median và Bilateral cùng thuộc denoise.
+# Giá trị chuẩn nằm trong docs/api-contract.md; không đổi riêng BE hoặc FE.
+# implementation_status hiện là not_implemented; catalog không thực thi xử lý ảnh.
+
 """The single source of algorithm metadata and parameter validation."""
 
 from dataclasses import dataclass

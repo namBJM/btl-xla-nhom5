@@ -1,3 +1,6 @@
+# Fixture tạo app/storage riêng để kiểm thử hợp đồng mà FE sử dụng.
+# Ảnh sinh ở đây chỉ là dữ liệu test, không phải kết quả giả đưa lên giao diện.
+
 """Isolated API test fixtures and test-only generated images."""
 
 from io import BytesIO

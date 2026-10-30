@@ -1,3 +1,11 @@
+# Mapping FE: UploadResponse <-> ImageAsset; ProcessRequest <-> ProcessRequest;
+# AdviseRequest <-> AdviceRequest; ProcessResultResponse <-> ProcessResult.
+# ProcessingStep nhận {algorithm, params}; params là số JSON, không phải string/bool.
+# ToolsPanel chuyển giá trị select thành số trước khi serializer gửi lên.
+# _validate_steps chỉ kiểm tra nhóm trùng và upscale cuối, không tự đổi thứ tự.
+# FE serializeSteps() bỏ nhóm tắt; process cần 1..8 bước, advise cho phép 0..8.
+# ErrorResponse khớp ApiErrorEnvelope; model kết quả là shape tương lai, chưa trả thật.
+
 """Strict API schemas. Catalog validation remains centralized in ``catalog``."""
 
 from typing import Annotated, Literal

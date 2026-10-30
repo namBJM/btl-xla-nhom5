@@ -1,3 +1,9 @@
+# Kiểu nội bộ cho thuật toán, không phải schema kiểm tra HTTP (xem schemas/models.py).
+# PipelineStep tương ứng ProcessingStep của FE; TypedDict không tự validate dữ liệu.
+# ImageArray: NumPy uint8 BGR; MaskArray: uint8 một kênh, cùng kích thước ảnh.
+# Ảnh truyền qua HTTP là file JPEG/PNG hoặc URL, không phải mảng NumPy.
+# AdviceResult khớp AdviceResponse; reason là giải thích cho từng bước đề xuất.
+
 """Type-only conventions for future algorithm implementations."""
 
 from typing import TYPE_CHECKING, TypeAlias, TypedDict
